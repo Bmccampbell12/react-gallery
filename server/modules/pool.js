@@ -11,6 +11,6 @@ const pool = new pg.Pool({
     port: 5432,
     database: databaseName,
     // allowExitOnIdle: true 
-})
+});
 
-module.exports = pool
+module.exports = pool;
