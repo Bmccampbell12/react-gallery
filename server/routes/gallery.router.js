@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
+// const pool = require('.../modules/pool.js');
 
 // PUT /gallery/like/:id
 router.put('/like/:id', (req, res) => {
-  // code here
+  const galleryId = req.params.id; 
+  const queryText = require('../modules/pool.js');
+  
 });
 
 // GET /gallery
