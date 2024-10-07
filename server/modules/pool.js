@@ -1,6 +1,7 @@
-const pg = require('pg')
+const pg = require('pg');
+const Pool = pg.Pool; // creates new instance of 'pool' from 'pg'
 
-let databaseName = 'react-gallery'
+let databaseName = 'react-gallery'; //Default database name
 
 if (process.env.NODE_ENV === 'test') {
   databaseName = 'prime_testing'
@@ -9,8 +10,8 @@ if (process.env.NODE_ENV === 'test') {
 const pool = new pg.Pool({
     host: 'localhost',
     port: 5432,
-    database: databaseName,
-    // allowExitOnIdle: true 
+    database: databaseName, // database to connect to. 
+    allowExitOnIdle: true  
 });
 
-module.exports = pool;
+module.exports = pool; //exports pool object
