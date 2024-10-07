@@ -1,9 +1,7 @@
-# Project Name
+# React Gallery
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
-## Description
+## This project is a simple gallery application built with React, Express, and PostgreSQL. Users can view a collection of gallery items, toggle between viewing images and descriptions, and like the images.
 
-Your project description goes here. What problem did you solve? How did you solve it?
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+The application solves the problem of managing and interacting with a gallery of images
